@@ -1,0 +1,91 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %} Wanawake{% endblock %}
+{%  block content %}
+
+
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Wanawake</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Wanawake</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h4>Idara ya Wanawake </h4>
+            <img src="{%  static 'assets/img/slide/slide3.jpg' %}"  alt="" class="img-fluid" style = "height:200px;width:500px"/>
+           
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+           <h5>Jeshi Kubwa La GGH</h5>
+            <p>
+
+Maono yetu  kama kanisa ni kufanya na kueneza kile Bwana wetu Yesu Kristo alituamuru katika Marko 16: 15-16:  ..…"Enendeni ulimwenguni mwote mkaihubiri injili kwa kila kiumbe, aaminiye na kubatizwa ataokolewa…,
+Mathayo 25:40" kwa kadiri mlivyomfanyia mmoja wa ndugu hawa wachache, ninyi wamefanya hivyo kwangu. ”
+Kanisa la FPCT lipo ili kuwaleta watu wote kila mahali kwenye maarifa ya kuokoa ya Bwana wetu Yesu Kristo kupitia injili, upandaji wa makanisa na kuwawezesha waumini kujiimarisha katika huduma mbalimbali 
+            </p>
+            
+          
+        </div>
+
+      </div>
+    {% comment %} </section><!-- End About Us Section -->
+      <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Maono</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Maono</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs --> {% endcomment %}
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about-us" class="about-us">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row content">
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
+           {% comment %} <h5>Maono yetu</h5> {% endcomment %}
+          <p>
+
+  Maono yetu  kama kanisa ni kufanya na kueneza kile Bwana wetu Yesu Kristo alituamuru katika Marko 16: 15-16:  ..…"Enendeni ulimwenguni mwote mkaihubiri injili kwa kila kiumbe, aaminiye na kubatizwa ataokolewa…,
+  Mathayo 25:40" kwa kadiri mlivyomfanyia mmoja wa ndugu hawa wachache, ninyi wamefanya hivyo kwangu. ”
+  Kanisa la FPCT lipo ili kuwaleta watu wote kila mahali kwenye maarifa ya kuokoa ya Bwana wetu Yesu Kristo kupitia injili, upandaji wa makanisa na kuwawezesha waumini kujiimarisha katika huduma mbalimbali 
+          </p>
+            
+          
+        </div>
+        <div class="col-lg-6" data-aos="fade-right">
+           {% comment %} <h2>GGH-UWW </h2> {% endcomment %}
+            <img src="{%  static 'assets/img/slide/wanawake.jpg' %}"  alt="" class="img-fluid" style = "height:200px;width:500px"/>
+            
+          </div>
+
+      </div>
+    </section>
+
+    
+  </main><!-- End #main --> 
+{% endblock %}
+  
+

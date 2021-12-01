@@ -1,0 +1,51 @@
+{% extends 'base.html' %} 
+{% load static %}
+{% block title %} Habari && Matukio {% endblock %}
+{%  block content%}
+
+  <main id="main">
+      <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+      
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Habari && Matukio </h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Habari && Matukio</li>
+          </ol>
+        </div>
+</section><!-- End Breadcrumbs -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title text-center">
+    
+              <h2>Habari Na Matukio</h2>
+              <p class="separator">Angalia Habari zetu na matukio yaliyo jili na ambayo yatajiri hivi karibu:-</p>
+            </div>
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        {% comment %} <div class="row no-gutters" id="vdo">
+          <div class="col-lg-6 video-box">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C3T78xwgdv0?start=2"
+             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div> {% endcomment %}
+      </div>
+          <div>
+            {% for post in posts %}
+              <img src="{{ post.header_image.url }}" alt="Event">
+              {{ post.title }}
+            {% endfor %}
+           
+          </div>
+    </section><!-- End Services Section -->
+  </main><!-- End #main -->
+  {% include "GGH/pagination.html" with page=machines %}
+      </div>
+    </section>
+  </main><!-- End #main -->
+  {% endblock %}
+  

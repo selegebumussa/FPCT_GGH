@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+Service Detail
+{% endblock %}
+{% block content %}
+<main id="main"></main>
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Equipment Detail</h2>
+          <ol>
+            <li><a href="{% url 'service' %}">Service</a></li>
+            <li>Equipment Detail</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+<!-- ======= Blog Section ======= -->
+<section id="blog" class="blog">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-8 entries">
+
+        <article class="entry" data-aos="fade-up">
+
+          <div class="entry-img">
+            <img src="{{ machine.upload_picture.url}}" alt="" class="img-fluid">
+          </div>
+
+          <h2 class="entry-title">
+            {{machine.equipment_name}}
+          </h2>
+
+          <div class="entry-content">
+            <p>
+              {{ machine.description }}
+            </p>
+          </div>
+
+        </article><!-- End blog entry -->
+      </div><!-- End blog entries list -->
+
+      <div class="col-lg-4">
+
+        <div class="sidebar" data-aos="fade-left">
+          <h3>Contact</h3>
+          <p>
+            <h6>Call any of these numbers to hire:</h6>
+            <strong>0789 573 591 Office Number<br>
+            <strong>0718 940 418<br>
+            <strong>0714 684 268<br>
+            <strong>0743 668 054<br>
+            
+          </p>
+        </div><!-- End sidebar -->
+
+      </div><!-- End blog sidebar -->
+
+    </div>
+
+  </div>
+</section><!-- End Blog Section -->
+</main><!-- End #main -->
+{% endblock%}
